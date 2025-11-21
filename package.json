@@ -2,7 +2,7 @@
   "name": "pooja-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://<your-github-username>.github.io/<repo-name>",
+  "homepage": "https://poojasukhdeve-project.github.io/pooja-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
