@@ -185,7 +185,7 @@ export default function Portfolio() {
               className="w-36 h-36 rounded-full mx-auto mb-4 object-cover"
             />
             <h3 className="text-center font-semibold">{contact.name}</h3>
-            <p className="text-center text-sm">Boston University • M.S. Computer Science</p>
+            <p className="text-center text-sm">Boston University • M.S. Computer Science(May 2026)</p>
             <div className="mt-4 text-sm">
               <p><strong>Skills:</strong> Data Analysis, ML, React, Node.js, SQL, Tableau</p>
             </div>
