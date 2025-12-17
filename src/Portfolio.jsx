@@ -305,6 +305,7 @@ export default function Portfolio() {
           <ul className="list-disc ml-5 text-sm space-y-2">
             <li>Winner — Boston University Hackathon 2024: Led a data science model project that delivered measurable business impact.</li>
             <li>Chapter contributor, IGI Global publications (2021) — AR in Immersive Virtual Learning Environments & Digital Built Environment.</li>
+            <li>Chapter contributor, IGI Global publications (2021) — AR in Immersive Virtual Learning Environments & Digital Built Environment.</li>
           </ul>
         </section>
 
