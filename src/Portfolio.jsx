@@ -28,6 +28,13 @@ export default function Portfolio() {
       github: 'https://github.com/poojasukhdeve06/portfolio'
     },
     {
+      title: 'Portfolio Website (This Site)',
+      subtitle: 'React • Tailwind • Vite',
+      desc: 'Single-page portfolio built with React + Tailwind. Mobile-first design, accessible components, and deploy-ready CI pipeline.',
+      tags: ['React','Tailwind','Vite'],
+      github: 'https://github.com/poojasukhdeve06/portfolio'
+    },
+    {
       title: 'E-Commerce Demo',
       subtitle: 'Next.js • Stripe • MongoDB',
       desc: 'Demo storefront with product catalog, cart, checkout (Stripe integration), and admin product management.',
