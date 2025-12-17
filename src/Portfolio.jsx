@@ -6,8 +6,9 @@ export default function Portfolio() {
     name: 'Pooja Sukhdeve',
     location: 'Boston, MA',
     phone: '+1 617-963-6004',
+    phone_secondary: '+91 9518732538',
     email: 'poojasukhdeve06@gmail.com',
-    linkedin: '#',
+    linkedin: 'https://github.com/poojasukhdeve-project',
     portfolio: '#'
   };
 
@@ -19,13 +20,6 @@ export default function Portfolio() {
       desc: 'A responsive portal for students to view schedules, resources, and announcements. Implements auth, REST APIs, and server-side rendering.',
       tags: ['React','Node.js','Postgres'],
       github: 'https://github.com/poojasukhdeve06/university-portal'
-    },
-    {
-      title: 'Portfolio Website (This Site)',
-      subtitle: 'React • Tailwind • Vite',
-      desc: 'Single-page portfolio built with React + Tailwind. Mobile-first design, accessible components, and deploy-ready CI pipeline.',
-      tags: ['React','Tailwind','Vite'],
-      github: 'https://github.com/poojasukhdeve06/portfolio'
     },
     {
       title: 'Portfolio Website (This Site)',
@@ -323,6 +317,7 @@ export default function Portfolio() {
               <p className="text-sm">If you'd like to collaborate or hire me, send an email or connect on LinkedIn.</p>
               <p className="mt-4 text-sm"><strong>Email:</strong> <a href={`mailto:${contact.email}`} className="underline">{contact.email}</a></p>
               <p className="text-sm"><strong>Phone:</strong> {contact.phone}</p>
+              <p className="text-sm"><strong>Phone:</strong> {contact.phone_secondary}</p>
               <div className="mt-4 space-x-3">
                 <a href={contact.linkedin} className="text-sm underline">LinkedIn</a>
                 <a href={contact.portfolio} className="text-sm underline">Portfolio</a>
