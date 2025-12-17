@@ -12,31 +12,6 @@ export default function Portfolio() {
     portfolio: '#'
   };
 
-  // Web projects (3)
-  const webProjects = [
-    {
-      title: 'University Portal',
-      subtitle: 'React • Node.js • PostgreSQL',
-      desc: 'A responsive portal for students to view schedules, resources, and announcements. Implements auth, REST APIs, and server-side rendering.',
-      tags: ['React','Node.js','Postgres'],
-      github: 'https://github.com/poojasukhdeve06/university-portal'
-    },
-    {
-      title: 'Portfolio Website (This Site)',
-      subtitle: 'React • Tailwind • Vite',
-      desc: 'Single-page portfolio built with React + Tailwind. Mobile-first design, accessible components, and deploy-ready CI pipeline.',
-      tags: ['React','Tailwind','Vite'],
-      github: 'https://github.com/poojasukhdeve06/portfolio'
-    },
-    {
-      title: 'E-Commerce Demo',
-      subtitle: 'Next.js • Stripe • MongoDB',
-      desc: 'Demo storefront with product catalog, cart, checkout (Stripe integration), and admin product management.',
-      tags: ['Next.js','Stripe','MongoDB'],
-      github: 'https://github.com/poojasukhdeve06/ecommerce-demo'
-    }
-  ];
-
   // Data analytics projects (3)
   const dataProjects = [
     {
@@ -59,9 +34,61 @@ export default function Portfolio() {
       desc: 'Analyzed Netflix library trends with interactive dashboards highlighting content-type, genre and regional insights.',
       tags: ['Tableau','Data Viz'],
       github: 'https://github.com/poojasukhdeve06/netflix-dashboard'
+    },
+    {
+    title: 'Salary & Compensation Trends (2024)',
+    subtitle: 'Python • Pandas • Matplotlib',
+    desc: 'Analysis of AI vs non-AI salary trends and regional pay differences.',
+    tags: ['EDA','Pandas','Visualization'],
+    github: '#'
+  },
+  {
+    title: 'ETF Winner–Loser Strategy',
+    subtitle: 'Machine Learning • Finance',
+    desc: 'Compared growth vs value ETFs using ML-based signals.',
+    tags: ['ML','Finance','Time Series'],
+    github: '#'
+  },
+  {
+    title: 'Diamond Price Analysis',
+    subtitle: 'Python • Kaggle',
+    desc: 'EDA on diamond prices focusing on Premium cut.',
+    tags: ['EDA','Statistics','Python'],
+    github: '#'
+  }
+  ];
+
+  // Web projects (3)
+  const webProjects = [
+    {
+      title: 'Stock Momentum Analyzer',
+      subtitle: 'React + Vite • Node.js/Express • GraphQL API • SMA/EMA/RSI Engine • MongoDB',
+      bullets: [
+          'Built production-ready quantitative trading platform processing multi-day rolling calculations (SMA20, EMA20, RSI14) and generating automated BUY/SELL signals through proprietary Momentum Score algorithm (0–100) using rule-driven technical analysis',
+          'Engineered full-stack signal engine with Node.js/Express backend performing price normalization and volatility checks, GraphQL API layer, and React frontend delivering interactive charts with real-time indicator overlays for multi-stock comparison (AAPL, MSFT, TSLA, AMZN, GOOGL)',
+          'Developed intelligent pattern detection system identifying directional bias, moving-average crossovers, RSI overbought/oversold levels, and trend breakdowns to deliver actionable trading signals with confidence scoring.'
+      ],
+      desc: 'Built production-ready quantitative trading platform processing multi-day rolling calculations (SMA20, EMA20, RSI14) and generating automated BUY/SELL signals through proprietary Momentum Score algorithm (0–100) using rule-driven technical analysis',
+      tags: ['React','Node.js','Postgres'],
+      github: 'https://github.com/poojasukhdeve06/university-portal'
+    },
+    {
+      title: 'Portfolio Website (This Site)',
+      subtitle: 'React • Tailwind • Vite',
+      desc: 'Single-page portfolio built with React + Tailwind. Mobile-first design, accessible components, and deploy-ready CI pipeline.',
+      tags: ['React','Tailwind','Vite'],
+      github: 'https://github.com/poojasukhdeve06/portfolio'
+    },
+    {
+      title: 'E-Commerce Demo',
+      subtitle: 'Next.js • Stripe • MongoDB',
+      desc: 'Demo storefront with product catalog, cart, checkout (Stripe integration), and admin product management.',
+      tags: ['Next.js','Stripe','MongoDB'],
+      github: 'https://github.com/poojasukhdeve06/ecommerce-demo'
     }
   ];
 
+  
   // Full experience list (7 entries) — will display as 3 / 3 / 1 rows with md:grid-cols-3
   const experience = [
     {
@@ -144,8 +171,8 @@ export default function Portfolio() {
         </div>
 
         <nav className="space-x-4 text-sm">
-          <a href="#web-projects" className="hover:underline">Web Projects</a>
           <a href="#data-projects" className="hover:underline">Data Projects</a>
+          <a href="#web-projects" className="hover:underline">Web Projects</a>
           <a href="#experience" className="hover:underline">Experience</a>
           <a href="#contact" className="hover:underline">Contact</a>
         </nav>
@@ -193,11 +220,11 @@ export default function Portfolio() {
           </motion.div>
         </section>
 
-        {/* Web Projects */}
-        <section id="web-projects" className="py-8">
-          <h3 className="text-2xl font-bold mb-4">Web Projects</h3>
+        {/* Data Analytics Projects */}
+        <section id="data-projects" className="py-8">
+          <h3 className="text-2xl font-bold mb-4">Data Analytics Projects</h3>
           <div className="grid md:grid-cols-3 gap-6">
-            {webProjects.map((p, i) => (
+            {dataProjects.map((p, i) => (
               <motion.article key={i} whileHover={{ y: -6 }} className="bg-white p-5 rounded-xl shadow-sm">
                 <div className="h-36 bg-gradient-to-br from-gray-100 to-gray-50 rounded-md mb-3 flex items-center justify-center">Image</div>
 
@@ -227,11 +254,11 @@ export default function Portfolio() {
           </div>
         </section>
 
-        {/* Data Analytics Projects */}
-        <section id="data-projects" className="py-8">
-          <h3 className="text-2xl font-bold mb-4">Data Analytics Projects</h3>
+        {/* Web Projects */}
+        <section id="web-projects" className="py-8">
+          <h3 className="text-2xl font-bold mb-4">Web Projects</h3>
           <div className="grid md:grid-cols-3 gap-6">
-            {dataProjects.map((p, i) => (
+            {webProjects.map((p, i) => (
               <motion.article key={i} whileHover={{ y: -6 }} className="bg-white p-5 rounded-xl shadow-sm">
                 <div className="h-36 bg-gradient-to-br from-gray-100 to-gray-50 rounded-md mb-3 flex items-center justify-center">Image</div>
 
