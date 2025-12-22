@@ -17,7 +17,7 @@ export default function Portfolio() {
     {
       title: 'Chatalogue — University Chatbot Assistant',
       subtitle: 'Python, Tkinter, SQLite, OpenAI (optional)',
-      desc: 'A responsive university chatbot that answers class & campus queries. Multithreaded UI with optional OpenWeatherMap and OpenAI integrations.',
+      desc: 'Chatalogue is a Python-based university chatbot with a 9-stage NLP pipeline combining custom spaCy NER (7 entities), SentenceTransformers, and Logistic Regression to convert natural language into SQL queries. It features context-aware conversation tracking with implicit reference resolution, hybrid RAG + SQL architecture (offline or GPT-4.1-mini enhanced), and production-ready Tkinter GUI with multi-clause splitting, fuzzy search, and threaded processing - all built with modular, extensible architecture.',
       tags: ['Python','NLP','SQLite','UX'],
       github: 'https://github.com/poojasukhdeve06/chatalogue'
     },
