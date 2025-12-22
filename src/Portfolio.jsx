@@ -169,6 +169,24 @@ const experience = [
     ]
   }
 ];
+const education = [
+  {
+    school: 'Boston University',
+    degree: 'M.S. in Computer Science',
+    date: 'May 2026'
+  },
+  {
+    school: 'Swami Ramanand Teerth Marathwada University',
+    degree: 'B.Tech in Computer Science',
+    date: 'Jun 2016'
+  }
+];
+
+const publications = [
+  'Winner — Boston University Hackathon 2024: Led a data science model project that delivered measurable business impact.',
+  'Chapter contributor, IGI Global publications (2021) — AR in Immersive Virtual Learning Environments & Digital Built Environment.',
+  'Chapter contributor, IGI Global publications (2021) — AR in Immersive Virtual Learning Environments & Digital Built Environment.'
+];
 
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
@@ -210,7 +228,37 @@ const experience = [
             <p className="mt-4 text-lg">
               M.S. Computer Science (Boston University). Data analyst & software developer experienced in ML, data visualization, and full-stack engineering. Passionate about accessibility and explainable ML.
             </p>
-          </div>
+            <div className="mt-6 flex flex-wrap gap-4">
+
+  {/* View Web Projects */}
+  <a
+    href="#web-projects"
+    className="px-5 py-2 rounded-lg border border-gray-300 text-sm hover:bg-gray-100 transition"
+  >
+    View Web Projects
+  </a>
+
+  {/* View Data Projects */}
+  <a
+    href="#data-projects"
+    className="px-5 py-2 rounded-lg border border-gray-300 text-sm hover:bg-gray-100 transition"
+  >
+    View Data Projects
+  </a>
+
+  {/* View Resume */}
+  <a
+    href="/Pooja_Sukhdeve_Resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="px-5 py-2 rounded-lg bg-gray-900 text-white text-sm hover:bg-gray-800 transition"
+  >
+    View Resume
+  </a>
+
+</div>
+
+</div>
           {/* RIGHT SIDE: ABOUT CARD (THIS IS THE MISSING PART) */}
   <motion.div
     initial={{ y: 40, opacity: 0 }}
@@ -318,6 +366,52 @@ const experience = [
       </motion.div>
     ))}
   </div>
+</motion.section>
+
+{/* EDUCATION */}
+<motion.section
+  id="education"
+  className="py-12"
+  initial={{ y: 60, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  viewport={{ once: false, amount: 0.2 }}
+  transition={{ duration: 0.6, ease: 'easeOut' }}
+>
+  <h3 className="text-2xl font-bold mb-6">Education</h3>
+
+  <div className="grid md:grid-cols-2 gap-6">
+    {education.map((ed, idx) => (
+      <div
+        key={idx}
+        className="bg-white p-6 rounded-xl shadow-sm"
+      >
+        <h4 className="font-semibold text-lg">{ed.school}</h4>
+        <p className="text-sm text-gray-600 mt-1">
+          {ed.degree} • {ed.date}
+        </p>
+      </div>
+    ))}
+  </div>
+</motion.section>
+
+{/* PUBLICATIONS & ACHIEVEMENTS */}
+<motion.section
+  id="publications"
+  className="py-12"
+  initial={{ y: 60, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  viewport={{ once: false, amount: 0.2 }}
+  transition={{ duration: 0.6, ease: 'easeOut' }}
+>
+  <h3 className="text-2xl font-bold mb-6">
+    Publications & Achievements
+  </h3>
+
+  <ul className="list-disc ml-6 space-y-3 text-sm text-gray-800">
+    {publications.map((item, idx) => (
+      <li key={idx}>{item}</li>
+    ))}
+  </ul>
 </motion.section>
 
         {/* Contact Us */}
