@@ -28,6 +28,7 @@ export default function Portfolio() {
     phone: '+1 617-963-6004',
     phone_secondary: '+91 9518732538',
     email: 'poojasukhdeve06@gmail.com',
+    email_secondary: 'psukhdev@bu.edu',
     linkedin: 'https://github.com/poojasukhdeve-project',
     portfolio: '#'
   };
@@ -223,10 +224,13 @@ const publications = [
         <motion.section className="grid md:grid-cols-3 gap-8 items-center py-8" {...scrollReveal}>
           <div className="md:col-span-2">
             <h2 className="text-4xl font-extrabold leading-tight">
-              Hi — I’m Pooja. I build data-driven products and accessible visualizations.
+              Hi - I’m Pooja. Data Analyst & Software Developer | Turning complex data into actionable insights and scalable software.
             </h2>
             <p className="mt-4 text-lg">
-              M.S. Computer Science (Boston University). Data analyst & software developer experienced in ML, data visualization, and full-stack engineering. Passionate about accessibility and explainable ML.
+              I’m a Data Analyst and Software Developer pursuing an M.S. in Computer Science at Boston University, with hands-on experience in analytics, machine learning, and full-stack development. I build data-driven applications that convert complex data into clear insights and scalable software.
+            </p>
+            <p className="mt-4 text-lg"> 
+              My skill set includes Python, SQL, Tableau, React, Node.js, REST APIs, and modern analytics workflows. I’m seeking entry-level to early-career Data Analyst or Software Developer roles where I can apply analytical rigor, strong engineering practices, and a user-focused mindset to deliver measurable impact.
             </p>
             <div className="mt-6 flex flex-wrap gap-4">
 
@@ -438,6 +442,13 @@ const publications = [
         <strong>Email:</strong>{' '}
         <a href={`mailto:${contact.email}`} className="underline">
           {contact.email}
+        </a>
+      </p>
+
+        <p>
+        <strong>Alternative Email:</strong>{' '}
+        <a href={`mailto:${contact.email_secondary}`} className="underline">
+          {contact.email_secondary}
         </a>
       </p>
 
