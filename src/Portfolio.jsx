@@ -38,6 +38,7 @@ export default function Portfolio() {
     {
       title: 'Chatalogue — University Chatbot Assistant',
       subtitle: 'Python, Tkinter, SQLite, OpenAI (optional)',
+       image: 'http://localhost:5173/pooja-portfolio/images/data_project1.png',
       desc: 'Chatalogue is a Python-based university chatbot with a 9-stage NLP pipeline combining custom spaCy NER (7 entities), SentenceTransformers, and Logistic Regression to convert natural language into SQL queries. It features context-aware conversation tracking with implicit reference resolution, hybrid RAG + SQL architecture (offline or GPT-4.1-mini enhanced), and production-ready Tkinter GUI with multi-clause splitting, fuzzy search, and threaded processing - all built with modular, extensible architecture.',
       tags: ['Python','NLP','SQLite','UX'],
       github: 'https://github.com/poojasukhdeve06/chatalogue'
@@ -307,7 +308,12 @@ const publications = [
                 whileHover={{ y: -6 }}
                 className="bg-white p-5 rounded-xl shadow-sm"
               >
-                <div className="h-36 bg-gray-100 rounded-md mb-3 flex items-center justify-center">Image</div>
+               <div className="relative w-full h-40 mb-4 rounded-lg overflow-hidden bg-gray-200">
+                 <img
+                    src={p.image}
+                    alt={p.title}
+                    className="absolute inset-0 w-full h-full object-cover"/>
+               </div>
                 <h4 className="text-lg font-semibold">{p.title}</h4>
                 <p className="text-sm text-gray-600">{p.subtitle}</p>
                 <p className="mt-2 text-sm">{p.desc}</p>
